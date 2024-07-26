@@ -2,7 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+
+.application-border {
+  border-radius: 30px;
+  /* outline: 5px solid; */
+  padding: 300px 500px;
+  background-color: #21201F;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-info {
+  text-align: left;
+}
+
+.right-info {
+  border-radius: 30px;
+  
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +51,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
