@@ -4,9 +4,10 @@
 
 
 .application-border {
-  border-radius: 30px;
+  border-radius: 20px;
+  display:flex;
   /* outline: 5px solid; */
-  padding: 300px 500px;
+  padding: 450px 700px;
   background-color: #21201F;
   position: absolute;
   top: 50%;
@@ -15,12 +16,49 @@
 }
 
 .left-info {
-  text-align: left;
+  position:absolute;
+  left: 30px;
+  top: 30px;
+  
 }
 
 .right-info {
-  border-radius: 30px;
+   position:absolute;
+   left: 300px;
+   top: 8px;
+
+}
+
+.information {
+  border-radius: 15px;
+  padding: 442px 545px;
+  position:absolute;
+
+  background-color: #161618;
+
+}
+
+.sidebar {
+  margin-bottom: 0.5rem; 
+  display: flex; 
+  align-items: center;
+  padding: 0.25rem;
+  cursor:pointer;
+  border-radius: 0.5rem;
+  color: #B8C5C5;
+  font-weight: bold;
   
+  
+}
+
+.sidebar:hover {
+  background-color: #3b3b3d;
+
+}
+
+.eightNotify {
+  /* justify-items: right; */
+  float: right;
 }
 
 /* :root {

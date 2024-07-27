@@ -18,8 +18,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={inter.className}>{children}</body>
-      
+      <body className={inter.className}>
+        <div className="min-h-screen bg-neutral-400 text-white">
+          <div className="application-border">
+            <div className="left-info">
+              <Sidebar />
+            </div>
+            <div className="right-info">
+              <div className="information">
+                {children}
+              </div>
+                
+            </div>
+          </div>
+        </div>
+        
+      </body>
     </html>
   );
 }

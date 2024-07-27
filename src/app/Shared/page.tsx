@@ -1,5 +1,5 @@
 const shared = () => {
-    return <div>Shared with me</div>;
+    return <div></div>;
   };
   
   export default shared;

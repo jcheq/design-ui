@@ -1,5 +1,5 @@
-const All = () => {
-    return <div>All Files</div>;
+const Home = () => {
+    return <div></div>;
   };
   
-  export default All;
+  export default Home;

@@ -1,5 +1,5 @@
 const PrivateFiles = () => {
-    return <div>Private Files</div>;
+    return <div></div>;
   };
   
   export default PrivateFiles;
