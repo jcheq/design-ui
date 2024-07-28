@@ -1,5 +1,5 @@
 const Design = () => {
-    return <div></div>;
+    return <div>Design</div>;
   };
   
   export default Design;

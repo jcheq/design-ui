@@ -26,15 +26,18 @@
    position:absolute;
    left: 300px;
    top: 8px;
-
+   
+  
 }
 
 .information {
   border-radius: 15px;
-  padding: 442px 545px;
+  /* padding: 442px 545px; */ 
+  width: 1090px;
+  height: 883px;
   position:absolute;
-
   background-color: #161618;
+  
 
 }
 
@@ -59,6 +62,49 @@
 .eightNotify {
   /* justify-items: right; */
   float: right;
+}
+
+.settings {
+  margin: 3%;
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+  align-items: center;
+  padding: 20px;
+}
+
+.userActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.userName {
+  /* display:flex;
+  flex-direction: column; */
+  background-color: #3b3b3d;
+}
+
+.search {
+  border-radius: 5px;
+  background-color: #333;
+  /* margin: 3%; */
+}
+.invite {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #444;
+  display:flex;
+  flex-direction: row;
+  /* margin: 3%; */
+}
+
+.upgrade {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #1a73e8;
+  /* margin: 3%; */
 }
 
 /* :root {

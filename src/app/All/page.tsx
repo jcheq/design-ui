@@ -1,5 +1,5 @@
 const All = () => {
-    return <div></div>;
+    return <div>All files</div>;
   };
   
   export default All;

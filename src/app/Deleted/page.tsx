@@ -1,5 +1,5 @@
 const deletedFiles = () => {
-    return <div></div>;
+    return <div>Deleted Files</div>;
   };
   
   export default deletedFiles;
