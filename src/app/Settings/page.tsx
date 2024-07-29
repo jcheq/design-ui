@@ -1,16 +1,18 @@
+"use client";
 import { Search, Plus } from "lucide-react";
 import { useState } from "react";
+import React from "react";
 
-
-// function settingTabs() {
-//   const [toggle, setToggle] = useState(1)
-
-//   function toggleTab(id) {
-//     toggleTab(id)
-//   }
-// }
 
 const Settings = () => {
+  const [toggleState, setToggle] = useState(1);
+  
+  const settingTabs = (index:any) => {
+    setToggle(index);
+    console.log("test");
+    // alert("hehe");
+  }
+  
     return (
       <div className="layout">
         <div className="settings">
@@ -38,19 +40,14 @@ const Settings = () => {
           
         </div>
         <div className="Tabs"> 
-          {/* <ul className="col-6">
-            <li className="flex-" onClick={()=>toggleTab(1)}>Settings</li>
-            <></>
-          </ul> */}
-          
-
-          <div className="tablist hover:text-gray-400">General</div>
-          <div className="tablist hover:text-gray-400">Security</div>
-          <div className="tablist hover:text-gray-400">Billing</div>
-          <div className="tablist hover:text-gray-400">Notifications</div>
-          <div className="tablist hover:text-gray-400">Branding</div>
-          <div className="tablist hover:text-gray-400">Refer a friend</div>
-          <div className="tablist hover:text-gray-400">Sharing</div>
+        
+          <div className={toggleState === 1 ? "tablist activeTab" : "tablist"} onClick={() => settingTabs(1)}>General</div>
+          <div className={toggleState === 2 ? "tablist activeTab" : "tablist"} onClick={() => settingTabs(2)}>Security</div>
+          <div className={toggleState === 3 ? "tablist activeTab" : "tablist"} onClick={() => settingTabs(3)}>Billing</div>
+          <div className={toggleState === 4 ? "tablist activeTab" : "tablist"} onClick={() => settingTabs(4)}>Notifications</div>
+          <div className={toggleState === 5 ? "tablist activeTab" : "tablist"} onClick={() => settingTabs(5)}>Branding</div>
+          <div className={toggleState === 6 ? "tablist activeTab" : "tablist"} onClick={() => settingTabs(6)}>Refer a friend</div>
+          <div className={toggleState === 7 ? "tablist activeTab" : "tablist"} onClick={() => settingTabs(7)}>Sharing</div>
 
         </div>
         
