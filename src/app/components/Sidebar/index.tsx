@@ -54,7 +54,7 @@ const Sidebar = () => {
               <li className="sidebar">
                 <RiNotificationBadgeLine className="mr-2 size-5" />
                 <a href="Notifications" className="hover:text-gray-400">Notifications</a>
-                <PiNumberCircleEightBold className="eightNotify size-5" />
+                <PiNumberCircleEightBold className="eightNotify size-5 " />
               </li>
               <li className="sidebar">
                 <Settings className="mr-2 size-5" />

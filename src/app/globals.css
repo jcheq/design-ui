@@ -56,12 +56,13 @@
 
 .sidebar:hover {
   background-color: #3b3b3d;
-
 }
 
 .eightNotify {
-  /* justify-items: right; */
-  float: right;
+  display:flex;
+  /* justify-content:right; */
+  align-items: center;
+  margin-left: 70px;
 }
 
 
@@ -69,13 +70,12 @@
   display:flex;
   flex-direction: column;
   margin: 1%;
-  /* background-color: gray; */
+  
 }
 .settings {
-  /* margin: 1%; */
+
   display: flex;
   justify-content: space-between;
-  /* background-color: gray; */
   align-items: center;
   padding: 20px;
 
@@ -92,7 +92,6 @@
   font-size: 23px;
   font-weight: bold;
   color:white;
-  /* background-color: #3b3b3d; */
 }
 
 .description {
@@ -148,32 +147,27 @@
   
 }
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.Tabs {
+  display: flex;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.tablist {
+  font-size: 15px;
+  margin-left: 2%;
+  display: flex; 
+  cursor: pointer;
+  border-radius: 5px;
+  color: #B8C5C5;
+  padding: 7px;
+
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.tablist:hover {
+  font-size: bold;
+  color: white;
+  background-color: #3b3b3d;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
+
