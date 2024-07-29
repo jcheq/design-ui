@@ -2,15 +2,16 @@
 import { Search, Plus } from "lucide-react";
 import { useState } from "react";
 import React from "react";
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 
 const Settings = () => {
   const [toggleState, setToggle] = useState(1);
   
-  const settingTabs = (index:any) => {
+  const settingTabs = (index:number) => {
     setToggle(index);
-    console.log("test");
-    // alert("hehe");
+  
   }
   
     return (
@@ -48,6 +49,54 @@ const Settings = () => {
           <div className={toggleState === 5 ? "tablist activeTab" : "tablist"} onClick={() => settingTabs(5)}>Branding</div>
           <div className={toggleState === 6 ? "tablist activeTab" : "tablist"} onClick={() => settingTabs(6)}>Refer a friend</div>
           <div className={toggleState === 7 ? "tablist activeTab" : "tablist"} onClick={() => settingTabs(7)}>Sharing</div>
+
+        </div>
+
+        <div className=" w-full h-full">
+
+          <div className={toggleState === 1 ? "content activeContent" : "content"}>
+            <div className="general"> General</div>
+          </div>
+
+          <div className={toggleState === 2 ? "content activeContent" : "content"}>
+          <div className="layout">
+            <div className="settings2">
+              <div className="flex">
+                <CircularProgress className="circleProgress" variant="determinate" value={90} />
+                <div className="user">
+                  <h2> Your account security is 90% </h2>
+                  <p className="description">Please review your account security settings regularly and update your password</p>
+                </div>
+              </div>
+              <div className="userActions">
+                <button className="dismiss">Dismiss</button>
+                <button className="review">Review Security</button>
+              </div>
+              
+            </div>
+          
+          </div>
+          </div>
+
+          <div className={toggleState === 3 ? "content activeContent" : "content"}>
+            <div className="Billing">Billing</div>
+          </div>
+
+          <div className={toggleState === 4 ? "content activeContent" : "content"}>
+            <div className="Notifications">Notifications</div>
+          </div>
+
+          <div className={toggleState === 5 ? "content activeContent" : "content"}>
+            <div className="Branding">Branding</div>
+          </div>
+
+          <div className={toggleState === 6 ? "content activeContent" : "content"}>
+            <div className="Refer a friend"> Refer a friend</div>
+          </div>
+
+          <div className={toggleState === 7 ? "content activeContent" : "content"}>
+            <div className="sharing"> Sharing</div>
+          </div>
 
         </div>
         
