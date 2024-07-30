@@ -58,24 +58,106 @@ const Settings = () => {
             <div className="general"> General</div>
           </div>
 
-          <div className={toggleState === 2 ? "content activeContent" : "content"}>
-          <div className="layout">
-            <div className="settings2">
-              <div className="flex">
-                <CircularProgress className="circleProgress" variant="determinate" value={90} />
-                <div className="user">
-                  <h2> Your account security is 90% </h2>
-                  <p className="description">Please review your account security settings regularly and update your password</p>
+          <div className={toggleState === 2 ? "content activeContent" : "content"}> 
+            <div className="layout">
+              <div className="settings2">
+                <div className="flex">
+                  <CircularProgress className="circleProgress" variant="determinate" value={90} />
+                  <div className="user">
+                    <h2> Your account security is 90% </h2>
+                    <p className="description">Please review your account security settings regularly and update your password</p>
+                  </div>
                 </div>
+                <div className="userActions">
+                  <button className="dismiss">Dismiss</button>
+                  <button className="review">Review Security</button>
+                </div>
+                
               </div>
-              <div className="userActions">
-                <button className="dismiss">Dismiss</button>
-                <button className="review">Review Security</button>
+          
+            </div>
+            <div className="basic">
+              Basics
+              <hr className="line"/>
+            </div>
+            <div className="password">
+              <div className="passInfo">
+            
+                Password
+                <p className="description">Set a password to protect your account.</p>
+
               </div>
+              <div className="hidden"></div>
+                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
+              <div className="hidden"></div>
+              <button className="edit">Edit</button>
+               
+
               
             </div>
-          
-          </div>
+            <div className="basic">
+              <hr className="line"/>
+            </div>
+            <div className="twostep">
+              <div className="passInfo">
+            
+                Two-step verification
+                <p className="description">We recommend requiring a verification code in addition to your password.</p>
+
+              </div>
+              {/* <div className="hidden">
+                
+              </div> */}
+              <button className="edit">Edit</button>
+
+            </div>
+              
+
+            <div className="basic">
+              <hr className="line"/>
+            </div>
+
+            <div className="twostep">
+              <div className="passInfo">
+            
+                Browsers and devices
+                <p className="description">These browsers and devices are currently signed in to your account. Remove any unauthorized devices.</p>
+
+              </div>
+            </div>
+
+            <div className="basic">
+              <hr className="line"/>
+            </div>
+
+
+            <div className="basic">
+              <hr className="line"/>
+            </div>
+
+
+            <div className="basic">
+              <hr className="line"/>
+            </div>
+
+            <div className="basic">
+              <hr className="line"/>
+            </div>
+
+            <div className="basic">
+              <hr className="line"/>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
           </div>
 
           <div className={toggleState === 3 ? "content activeContent" : "content"}>
@@ -98,7 +180,13 @@ const Settings = () => {
             <div className="sharing"> Sharing</div>
           </div>
 
+
+
+    
+
         </div>
+
+      
         
       </div>
       

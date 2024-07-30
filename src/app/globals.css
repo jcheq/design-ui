@@ -248,3 +248,63 @@
   font-size: 16px;
   color: #B8C5C5;
 }
+
+.line {
+
+  width: 100%; 
+  border: none;
+  height: 1px;
+  background-color: #333; /* Adjust the color as needed */
+  margin-top: 5px;;
+}
+
+.basic {
+  margin: 2%;
+  
+}
+
+.password {
+  margin: 2%;
+  display: flex;
+  flex-direction: left;
+  justify-content: space-between;
+  /* background-color: blue; */
+  /* padding: 10px; */
+  align-items:baseline;
+}
+
+.passInfo {
+  /* justify-content: space-between; */
+  /* display: flex; */
+  /* gap: 50px; */
+  /* background-color: blue; */
+
+}
+
+.hidden {
+  
+  
+}
+
+.edit {
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #313030;
+  
+  cursor: pointer;
+  border-radius: 6px;
+  border-width: thin;
+  border-color: #313030;
+
+  font-size: 13px;
+}
+
+.twostep {
+  margin: 2%;
+  display: flex;
+  flex-direction: left;
+  justify-content: space-between;
+  align-items:baseline;
+}
