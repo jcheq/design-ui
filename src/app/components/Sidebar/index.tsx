@@ -1,3 +1,4 @@
+"use client";
 import { FileLock2, Lock, Settings2Icon } from "lucide-react";
 import {
   Trash2,
@@ -7,10 +8,8 @@ import {
   SquareArrowOutUpRightIcon,
   Settings,
   CircleCheck,
-  UserPlusIcon,
-  LucideIcon,
-  EllipsisVertical
-  
+  EllipsisVertical,
+  ChevronRight
 } from "lucide-react";
 
 import { TbUsersPlus } from "react-icons/tb";
@@ -18,9 +17,16 @@ import { RiHomeSmile2Line } from "react-icons/ri";
 import { RiNotificationBadgeLine } from "react-icons/ri";
 import { PiNumberCircleEightBold } from "react-icons/pi";
 import { PiFolder } from "react-icons/pi";
-
+import LinearProgress from "@mui/material/LinearProgress/LinearProgress";
+import Box from '@mui/material/Box';
+import { IconContext } from "react-icons";
 
 const Sidebar = () => {
+
+
+  
+
+
     return (
       // <div className="text-lg font-bold mb-4">Untitled UI</div>
       // <div className="min-h-screen bg-gray-900 text-white">
@@ -56,7 +62,10 @@ const Sidebar = () => {
               <li className="sidebar">
                 <RiNotificationBadgeLine className="mr-2 size-5" />
                 <a href="Notifications" className="hover:text-gray-400">Notifications</a>
-                <PiNumberCircleEightBold className="eightNotify size-5 " />
+                <IconContext.Provider
+                     value={{ color: 'lightblue' }}>
+                  <PiNumberCircleEightBold className="eightNotify size-5 "/>
+                </IconContext.Provider>
               </li>
               <li className="sidebar">
                 <Settings className="mr-2 size-5" />
@@ -71,11 +80,12 @@ const Sidebar = () => {
             </div>
             
           </div>
-
-        {/* <div className="storage">
-          Storage
-
-        </div> */}
+          <div className="folderMenu">
+            <ChevronRight className="size-5"/>
+            <div className="folders">
+              Folders
+            </div>   
+          </div>
 
 
 

@@ -23,7 +23,7 @@ export default function RootLayout({
       
       <body className={inter.className}>
         <div className="min-h-screen bg-neutral-400 text-white">
-          <div className="application-border">
+          <div className="application-border">        
             <div className="left-info">
               <Sidebar />
               <div className="storage">
@@ -32,12 +32,11 @@ export default function RootLayout({
                   <div className="up">Upgrade</div>
                 </div>
                 <Box sx={{ width: '100%' }}>
-                  <LinearProgress variant="determinate" value={92} />
+                  <LinearProgress variant="determinate" value={92} className="progressBar p-1"/>
                 </Box>
-                <p className="description">9.2GB of 10GB used</p>
+                <p className="storageDesc">9.2GB of 10GB used</p>
                 
               </div>
-              
             </div>
             <div className="right-info">
               <div className="information">

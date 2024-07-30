@@ -7,7 +7,7 @@
   border-radius: 20px;
   display: flex;
   /* outline: 5px solid; */
-  padding: 450px 700px;
+  padding: 470px 700px;
   background-color: #21201F;
   position: absolute;
   top: 50%;
@@ -17,9 +17,11 @@
 
 .left-info {
   position:absolute;
+  flex-wrap: wrap;
   left: 25px;
   top: 25px;
   height:95%;
+  /* width: 30px; */
   /* background-color: white; */
   
 }
@@ -36,7 +38,7 @@
   border-radius: 15px;
   /* padding: 442px 545px; */ 
   width: 1090px;
-  height: 883px;
+  height: 920px;
   position:absolute;
   background-color: #161618;
   
@@ -52,8 +54,7 @@
   border-radius: 0.5rem;
   color: #B8C5C5;
   font-weight: bold;
-  
-  
+ 
   
 }
 
@@ -65,6 +66,7 @@
   display:flex;
   align-items: center;
   margin-left: auto;
+  /* background-color: #1a73e8; */
 }
 
 .files {
@@ -79,19 +81,36 @@
   cursor: pointer;
 }
 
+.folderMenu {
+  margin-top: 15px;
+  /* margin-left: 10px; */
+  display:flex;
+  align-items: center;
+  padding: 0.25rem;
+  cursor:pointer;
+  color: #B8C5C5;
+  font-weight: bold;
+}
+
+.folders {
+
+  display:flex;
+  align-items: center;
+  padding: 0.25rem;
+  cursor:pointer;
+  color: #B8C5C5;
+  font-weight: bold;
+
+}
+
 .storage {
-  /* margin-top: auto; */
-  display: flex;
+  margin-top: 300px;
+
   border-radius: 15px;
   font-size: 15px;
-  /* padding: 10px; */
   background-color: #28282a;
-  /* border-width: thin; */
-  /* padding-bottom: 60px; */
-  /* border-left: 25px; */
-  /* border-right: 25px; */
-  /* margin-top: 300px; */
-  
+  padding: 20px;
+  font-weight: bold;
 
 }
 
@@ -99,8 +118,23 @@
   margin-left: auto;
   cursor: pointer;
   text-decoration: underline;
+  font-size: small;
+  font-weight: normal;
 }
+.storageDesc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #afafb4;
+  margin-top: auto;
 
+}
+.progressBar {
+  border-radius: 5px;
+  /* padding: 20px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 
 .layout {
@@ -310,6 +344,26 @@
   gap: 100px;
 }
 
+.passwordCheck {
+  /* display: none; */
+  /* color: #658f75 */
+}
+
+.passInput {
+  
+  background-color: #313030;
+}
+
+.checkInfo {
+  align-items:baseline;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #658f75;
+
+}
+
 .boxConstraint {
   width: 240px;
 }
@@ -342,4 +396,28 @@
   display: flex;
   align-items:baseline;
   gap: 100px;
+}
+
+.brave {
+  border-radius: 5px;
+  border-spacing: 5px;
+  padding: 4px;
+  background-color: #313030;
+}
+
+.contentItem {
+  font-size: 12px;
+  
+}
+
+.pointer {
+  margin-left: 480px;
+}
+
+.picture {
+  display: flex;
+  border-radius: 120px;
+  size: 40px;
+  width: 30px;
+  height: 30px;
 }

@@ -1,9 +1,17 @@
 "use client";
-import { Search, Plus } from "lucide-react";
+import { Search, Plus, Circle } from "lucide-react";
 import { useState } from "react";
 import React from "react";
 import CircularProgress from '@mui/material/CircularProgress';
-
+import { FaBrave } from "react-icons/fa6";
+import { IconContext, IconType } from "react-icons";
+import { FaRegTrashAlt } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
+import vietnam from "../assets/images/vietnam.png"
+import { StaticImageData } from "next/image";
+import {
+  CircleCheck,
+} from "lucide-react";
 
 
 const Settings = () => {
@@ -11,8 +19,12 @@ const Settings = () => {
   
   const settingTabs = (index:number) => {
     setToggle(index);
-  
   }
+
+  const removeDiv = (id:any) => {
+    document.getElementById(id)?.remove();
+  }
+
   
     return (
       <div className="layout">
@@ -87,19 +99,24 @@ const Settings = () => {
                 <p className="description">Set a password to protect your account.</p>
 
               </div>
-              {/* <div className="hidden"> */}
-                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
-              {/* </div> */}
+              <div className="passwordCheck flex mb-auto ">
+                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" className="passInput"/>
+                <CircleCheck className="size-5 ml-2" color="#658f75"/>
+                <p className="checkInfo">Very Secrure</p>
+              </div>
               <button className="edit">Edit</button>
                
 
               
             </div>
+            
             <div className="basic">
               <hr className="line"/>
             </div>
             <div className="twostep">
               <div className="boxConstraint">
+                {/* <input type="checkbox" checked/> */}
+                <span className="slider round"></span>
             
                 Two-step verification
                 <p className="description">We recommend requiring a verification code in addition to your password.</p>
@@ -133,31 +150,94 @@ const Settings = () => {
             </div>
 
 
-            <div className="basic">
-              <hr className="line"/>
+
+            <div className="items">
+              <div className="e" id="first">
+                <div className="contentItem m-5 flex">
+                  <IconContext.Provider
+                    value={{ color: 'darkorange' }}>
+                    <FaBrave className="brave size-8 mr-3" />
+                  </IconContext.Provider>
+                  <div className="pt-2">
+                    Brave on Mac OS X
+                  </div>
+                  <div className="flex pointer gap-20 ml-auto mr-3 mt-auto mb-auto">
+                    <p className="description">Ninh Binh, Vietnam</p>
+                    <p className="description">Current session</p>
+                  
+                  </div>
+                  <FaRegTrashAlt className="size-4 ml-auto mr-3 mt-auto mb-auto" onClick={() => removeDiv("first")}/>
+                </div>
+                <div className="basic">
+                  <hr className="line"/>
+                </div>
+              </div>
+
+              <div className="e" id="second">
+                <div className="contentItem m-5 flex">
+                  <FaApple className="brave size-8 mr-3"/>
+                  <div className="pt-2">
+                  Mia's MacBook Pro
+                  </div>
+                  <div className="flex pointer flex-wrap gap-20 mr-3 mt-auto mb-auto">
+                    <p className="description flex mt-auto mb-auto">
+                    {/* <img src={vietnam.src} alt="Image" className="picture mt-auto mb-auto"/> */}
+                    Ninh Binh, Vietnam</p>
+                    <p className="description">Current session</p>
+                  </div>
+                  <FaRegTrashAlt className="size-4 ml-auto mr-3 mt-auto mb-auto" onClick={() => removeDiv("second")}/>
+                </div>
+                <div className="basic">
+                  <hr className="line"/>
+                </div>
+              </div>
+
+              <div className="e" id="third">
+                <div className="contentItem m-5 flex">
+                  <IconContext.Provider
+                    value={{ color: 'darkorange' }}>
+                    <FaBrave className="brave size-8 mr-3" />
+                  </IconContext.Provider>
+                  <div className="pt-2 flex">
+                  Brave on Mac OS X
+                  </div>
+                  <div className="pointer flex gap-20 mr-3 mt-auto mb-auto">
+                    <p className="description">Mexico City, Mexico</p>
+                    <p className="description">1 month ago</p>
+                
+                  </div>
+                  <FaRegTrashAlt className="size-4 ml-auto mr-3 mt-auto mb-auto" onClick={() => removeDiv("third")}/>
+                </div>
+                <div className="basic">
+                  <hr className="line"/>
+                </div>
+              </div>
+
+              <div className="e" id="fourth">
+                <div className="contentItem m-5 flex">
+                  <FaApple className="brave size-8 mr-3"/>
+                  <div className="pt-2">
+                  Mia's MacBook Pro
+                  </div>
+                  <div className="flex pointer gap-20 ml-auto mr-3 mt-auto mb-auto">
+                    <p className="description">Mexico City, Mexico</p>
+                    <p className="description">1 month ago</p>
+                  </div>
+                  <FaRegTrashAlt className="size-4 ml-auto mr-3 mt-auto mb-auto" onClick={() => removeDiv("fourth")}/>
+                </div>
+                <div className="basic">
+                  <hr className="line"/>
+                </div>
+              </div>
+
+
+
+
+              
+
+
+
             </div>
-
-
-            <div className="basic">
-              <hr className="line"/>
-            </div>
-
-            <div className="basic">
-              <hr className="line"/>
-            </div>
-
-            <div className="basic">
-              <hr className="line"/>
-            </div>
-            
-
-
-
-
-
-
-
-
 
 
           </div>
