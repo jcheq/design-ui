@@ -8,7 +8,9 @@ import {
   Settings,
   CircleCheck,
   UserPlusIcon,
-  LucideIcon
+  LucideIcon,
+  EllipsisVertical
+  
 } from "lucide-react";
 
 import { TbUsersPlus } from "react-icons/tb";
@@ -62,6 +64,21 @@ const Sidebar = () => {
               </li>
             </ul>
           </nav>
+          <div className="files">
+            FILE BROWSER
+            <div className="fileMenu">
+              <EllipsisVertical className="size-4 hover:text-gray-400"/>
+            </div>
+            
+          </div>
+
+        {/* <div className="storage">
+          Storage
+
+        </div> */}
+
+
+
         </div>
 
     );

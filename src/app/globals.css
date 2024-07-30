@@ -17,8 +17,10 @@
 
 .left-info {
   position:absolute;
-  left: 30px;
-  top: 30px;
+  left: 25px;
+  top: 25px;
+  height:95%;
+  /* background-color: white; */
   
 }
 
@@ -52,6 +54,7 @@
   font-weight: bold;
   
   
+  
 }
 
 .sidebar:hover {
@@ -60,10 +63,44 @@
 
 .eightNotify {
   display:flex;
-  /* justify-content:right; */
   align-items: center;
-  margin-left: 70px;
+  margin-left: auto;
 }
+
+.files {
+  margin-top: 25px;
+  font-size: small;
+  color: #afafb4;
+  display:flex;
+}
+
+.fileMenu {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.storage {
+  /* margin-top: auto; */
+  display: flex;
+  border-radius: 15px;
+  font-size: 15px;
+  /* padding: 10px; */
+  background-color: #28282a;
+  /* border-width: thin; */
+  /* padding-bottom: 60px; */
+  /* border-left: 25px; */
+  /* border-right: 25px; */
+  /* margin-top: 300px; */
+  
+
+}
+
+.up {
+  margin-left: auto;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 
 
 .layout {
@@ -192,7 +229,6 @@
 .security {
   margin: 1%;
   display: flex;
-
   border-radius: 20px;
   background-color: #21201F;
 }
@@ -266,20 +302,19 @@
 .password {
   margin: 2%;
   display: flex;
-  flex-direction: left;
-  justify-content: space-between;
+  /* flex-direction: left; */
+  /* justify-content: space-between; */
   /* background-color: blue; */
   /* padding: 10px; */
   align-items:baseline;
+  gap: 100px;
 }
 
-.passInfo {
-  /* justify-content: space-between; */
-  /* display: flex; */
-  /* gap: 50px; */
-  /* background-color: blue; */
-
+.boxConstraint {
+  width: 240px;
 }
+
+
 
 .hidden {
   
@@ -287,6 +322,7 @@
 }
 
 .edit {
+  margin-left: auto;
   border-radius: 5px;
   padding: 5px;
   padding-left: 10px;
@@ -304,7 +340,6 @@
 .twostep {
   margin: 2%;
   display: flex;
-  flex-direction: left;
-  justify-content: space-between;
   align-items:baseline;
+  gap: 100px;
 }

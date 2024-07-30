@@ -81,15 +81,15 @@ const Settings = () => {
               <hr className="line"/>
             </div>
             <div className="password">
-              <div className="passInfo">
+              <div className="boxConstraint">
             
                 Password
                 <p className="description">Set a password to protect your account.</p>
 
               </div>
-              <div className="hidden"></div>
+              {/* <div className="hidden"> */}
                 <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
-              <div className="hidden"></div>
+              {/* </div> */}
               <button className="edit">Edit</button>
                
 
@@ -99,15 +99,17 @@ const Settings = () => {
               <hr className="line"/>
             </div>
             <div className="twostep">
-              <div className="passInfo">
+              <div className="boxConstraint">
             
                 Two-step verification
                 <p className="description">We recommend requiring a verification code in addition to your password.</p>
 
               </div>
-              {/* <div className="hidden">
+
+              
+              <p className="description">Two-step verification</p>
                 
-              </div> */}
+              
               <button className="edit">Edit</button>
 
             </div>
@@ -181,13 +183,8 @@ const Settings = () => {
           </div>
 
 
-
-    
-
         </div>
 
-      
-        
       </div>
       
 
